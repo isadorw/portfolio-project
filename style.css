@@ -134,13 +134,34 @@ nav ul a svg {
 
 .about-me .img-container {
     width: 50%;
+    position: relative;
 }
 
 .about-me .img-container img {
     width: 45%;
+    height: 100%;
     display: block;
     margin: 0 auto;
 }
+
+.about-me .img-container .line {
+    width: calc(45% + 50px);
+    height: calc(100% + 50px);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 45%/2 - 25px);
+}
+
+.about-me .img-container .line.purple {
+    border: 1px solid var(--purple);
+}
+
+.about-me .img-container .line.green {
+    transform: rotate(-3.3deg);
+    border: 1px solid var(--green);
+}
+
 
 /* RESPONSIVIDADE */
 
