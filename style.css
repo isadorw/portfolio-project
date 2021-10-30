@@ -55,6 +55,14 @@ button {
     cursor: pointer;
 }
 
+.title-purple {
+    color: var(--purple);
+}
+
+.title-green {
+    color: var(--green);
+}
+
 /* header without menu bottom */
 
 header {
@@ -72,10 +80,6 @@ header .container {
 
 header .container img {
     display: none;
-}
-
-header .container h1 {
-    color: var(--green);
 }
 
 header .container button {
@@ -116,9 +120,26 @@ nav ul a svg {
     display: none;
 }
 
-section {
-    height: 1500px;
-    background: purple;
+/* SOBRE MIM */
+
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+}
+
+.about-me .img-container img {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
 }
 
 /* RESPONSIVIDADE */
@@ -167,6 +188,10 @@ section {
 
     nav {
         padding: 0 15px;
+        position: fixed;
+        bottom: 0;
+        top: unset;
+        width: 100%; 
     }
     
     nav ul a {
