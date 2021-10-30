@@ -9,7 +9,7 @@
     --menu-height: 75px;
 }
 
-/* zerando html */
+/* reset css */
 * {
     box-sizing: border-box;
 }
@@ -18,6 +18,8 @@ html, body {
     margin: 0;
     background: var(--bg-dark);
 }
+
+/* text */
 
 body, button, input, select, text {
     font-family: 'Poppins', sans-serif;
@@ -41,11 +43,20 @@ p {
     color: var(--light-gray);
 }
 
+.title-purple {
+    color: var(--purple);
+}
+
+.title-green {
+    color: var(--green);
+}
+
 button {
     color: white;
     font-size: 18px;
     font-weight: bold;
     background: var(--purple);
+
     border: 0;
     border-radius: 16px;
     width: 235px;
@@ -53,14 +64,6 @@ button {
     padding: 8px 35px;
     bottom: 100px;
     cursor: pointer;
-}
-
-.title-purple {
-    color: var(--purple);
-}
-
-.title-green {
-    color: var(--green);
 }
 
 /* header without menu bottom */
@@ -90,16 +93,16 @@ header .container button {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     height: var(--menu-height);
     padding: 0 100px;
+    z-index: 99;
 
     position: sticky;
     top: 0;
-    background: var(--bg-dark);
 
-    z-index: 99;
+    background: var(--bg-dark);
 }
 
 nav img {
@@ -127,6 +130,7 @@ nav ul a svg {
 .about-me {
     display: flex;
     padding: 100px;
+    margin-top: 180px;
 }
 
 .about-me .container {
@@ -165,6 +169,50 @@ nav ul a svg {
     border: 1px solid var(--green);
 }
 
+/* SERVIÇOS */
+
+.services {
+    text-align: center;
+    
+    margin: 150px 0;
+    padding: 0 100px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.services .services-container .service-card {
+    max-width: 360px;
+    padding: 40px 25px;
+
+    background: #2F3034;
+    border: 1px solid var(--purple);
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.services .services-container .service-card img {
+    margin-bottom: 40px;
+    width: 90px;
+}
+
+.services .services-container .service-card h2 {
+    color: var(--green);
+}
+
+/* seletor irmão adjacente: somente seg e terc tem margin */
+.service-card + .service-card {
+    margin-left: 10px;
+}
 
 /* RESPONSIVIDADE */
 
@@ -184,6 +232,7 @@ nav ul a svg {
 
     .about-me {
         flex-direction: column;
+        margin-top: 20px;
     }
 
     .about-me .container, .about-me .img-container {
