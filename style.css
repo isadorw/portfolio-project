@@ -5,6 +5,8 @@
     --green: #15CDCB;
     --bg-dark: #212226;
     --light-gray: #E0DEDE;
+    --dark-gray: #2F3034;
+;
 
     --menu-height: 75px;
 }
@@ -64,6 +66,24 @@ button {
     padding: 8px 35px;
     bottom: 100px;
     cursor: pointer;
+}
+
+.secondary-button {
+    background: var(--dark-gray);
+    color: var(--green);
+    border: 1px solid var(--purple);
+    font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+
+    width: 428px;
+    height: 80px;
+    margin-right: 70px;
+}
+
+.secondary-button img {
+    margin-right: 15px;
 }
 
 /* header without menu bottom */
@@ -296,7 +316,34 @@ nav ul a svg {
     margin-left: 10px;
 }
 
+/* currículo */
 
+.curriculum {
+    padding: 0 100px;
+    text-align: center;
+}
+
+.curriculum .container {
+    display: flex;
+    margin: 50px 0;
+}
+
+.curriculum .container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.curriculum .container .content .curriculum-info {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-gap: 1rem;
+
+    margin-bottom: 50px;
+}
 
 /* RESPONSIVIDADE */
 
