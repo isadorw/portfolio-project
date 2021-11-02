@@ -6,6 +6,8 @@
     --bg-dark: #212226;
     --light-gray: #E0DEDE;
     --dark-gray: #2F3034;
+    --gray-footer: #A6A6A6;
+
 ;
 
     --menu-height: 75px;
@@ -350,6 +352,44 @@ nav ul a svg {
     padding: 0 15px;
 }
 
+/* contact me */
+
+.contact {
+    max-width: 708px;
+    margin: 215px auto 80px;
+
+
+    text-align: center;
+}
+
+.contact h1 {
+    width: fit-content;
+    margin: 0 auto 40px;
+
+    background: -webkit-linear-gradient(#15CDCB, #5280E2);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact button {
+    margin: 40px auto;
+}
+
+.contact .social-media {
+    max-width: 360px;
+    margin: 50px auto 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+    color: var(--gray-footer);
+
+    margin-bottom: 35px;
+}
+
 /* RESPONSIVIDADE */
 
 /* small desktops */
@@ -477,7 +517,7 @@ nav ul a svg {
         margin: 70px 0;
     }
 
-    .services .services-container, .portfolio, .curriculum {
+    .services .services-container, .portfolio, .curriculum, .contact {
         padding: 0 30px;
     }
 
