@@ -53,7 +53,7 @@ p {
     color: var(--green);
 }
 
-button {
+.primary-button {
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -73,13 +73,16 @@ button {
     color: var(--green);
     border: 1px solid var(--purple);
     font-weight: bold;
+    font-size: 18px;
     
     display: flex;
     align-items: center;
 
-    width: 428px;
     height: 80px;
-    margin-right: 70px;
+    border-radius: 16px;
+    padding: 8px 35px;
+    bottom: 100px;
+    cursor: pointer;
 }
 
 .secondary-button img {
@@ -325,7 +328,8 @@ nav ul a svg {
 
 .curriculum .container {
     display: flex;
-    margin: 50px 0;
+    margin: 50px auto;
+    max-width: 1200px;
 }
 
 .curriculum .container .content {
@@ -343,6 +347,7 @@ nav ul a svg {
     grid-gap: 1rem;
 
     margin-bottom: 50px;
+    padding: 0 15px;
 }
 
 /* RESPONSIVIDADE */
@@ -400,6 +405,17 @@ nav ul a svg {
     .portfolio {
         height: 100%;
     }
+
+    .curriculum .container {
+        flex-wrap: wrap;
+    }
+
+    .curriculum .container .curriculum-img {
+        display: block;
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 520px;
+    }
 }
 
 /* tablet */
@@ -421,6 +437,8 @@ nav ul a svg {
     nav ul a {
         font-size: 16px;
     }
+
+
 }
 
 /* celular */
@@ -459,7 +477,7 @@ nav ul a svg {
         margin: 70px 0;
     }
 
-    .services .services-container, .portfolio {
+    .services .services-container, .portfolio, .curriculum {
         padding: 0 30px;
     }
 
